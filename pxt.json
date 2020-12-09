@@ -1,7 +1,8 @@
 {
     "name": "bitplayer",
     "version": "0.0.0",
-    "description": "",
+    "description": "The BitPlayer extension for micro:bit",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*"
@@ -9,11 +10,18 @@
     "files": [
         "README.md",
         "bitplayer.cpp",
-        "bitplayer.ts"
+        "bitplayer.ts",
+        "_locales/zh/bitplayer-strings.json",
+        "_locales/zh/bitplayer-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
-    "installedVersion": "workspace:36e8afc6-ef4e-4b31-cb17-43929f83e132"
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "disablesVariants": [
+        "mbcodal"
+     ]
 }
