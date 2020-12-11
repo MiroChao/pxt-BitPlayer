@@ -7,6 +7,7 @@ namespace bitplayer {
     //%
     void init() {
         if (initialized) return;
+
     // mount buttons on the pins with a pullup mode
     // TODO: fix this issue in the DAL itself
         #define ALLOC_PIN_BUTTON(id) new MicroBitButton(getPin(id)->name, id, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
