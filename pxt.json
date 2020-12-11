@@ -1,6 +1,6 @@
 {
     "name": "bitplayer",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "The BitPlayer extension for micro:bit",
     "license": "MIT",
     "dependencies": {
@@ -20,5 +20,6 @@
     "public": true,
     "supportedTargets": [
         "microbit"
+        "mbcodal"
     ]
 }
