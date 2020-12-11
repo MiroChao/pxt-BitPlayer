@@ -25,34 +25,6 @@ enum Joystick {
     LowerRight
 }
 
-enum BitPlayerKey {
-    //% block="A"
-    key_A = DAL.MICROBIT_ID_IO_P5,
-    //% block="B"
-    key_B = DAL.MICROBIT_ID_IO_P11,
-    //% block="C"
-    key_C = DAL.MICROBIT_ID_IO_P13,
-    //% block="D"
-    key_D = DAL.MICROBIT_ID_IO_P14,
-    //% block="L"
-    key_L = DAL.MICROBIT_ID_IO_P15,
-    //% block="R"
-    key_R = DAL.MICROBIT_ID_IO_P16,
-}
-
-/**
- * Button Events of BitPlayer
- */
-//%
-enum BitPlayerKeyEvent {
-    //% block="click"
-    click = DAL.MICROBIT_BUTTON_EVT_CLICK,
-    //% block="pressed"
-    pressed = DAL.MICROBIT_BUTTON_EVT_DOWN,
-    //% block="released"
-    released = DAL.MICROBIT_BUTTON_EVT_UP,
-}
-
 
 /**
  * Provides access to BitPlayer blocks for micro: bit functionality.
@@ -65,6 +37,34 @@ namespace BitPlayer {
     function InitialPosition(): void {
         posi_init = 1;
         return;
+    }
+
+    export enum BitPlayerKey {
+        //% block="A"
+        key_A = DAL.MICROBIT_ID_IO_P5,
+        //% block="B"
+        key_B = DAL.MICROBIT_ID_IO_P11,
+        //% block="C"
+        key_C = DAL.MICROBIT_ID_IO_P13,
+        //% block="D"
+        key_D = DAL.MICROBIT_ID_IO_P14,
+        //% block="L"
+        key_L = DAL.MICROBIT_ID_IO_P15,
+        //% block="R"
+        key_R = DAL.MICROBIT_ID_IO_P16,
+    }
+    
+    /**
+     * Button Events of BitPlayer
+     */
+    //%
+    export enum BitPlayerKeyEvent {
+        //% block="click"
+        click = DAL.MICROBIT_BUTTON_EVT_CLICK,
+        //% block="pressed"
+        pressed = DAL.MICROBIT_BUTTON_EVT_DOWN,
+        //% block="released"
+        released = DAL.MICROBIT_BUTTON_EVT_UP,
     }
 
 	/**
